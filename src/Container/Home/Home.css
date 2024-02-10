@@ -1,0 +1,46 @@
+.heroContainer {
+  background: url("../../assets/heroBg.png") center/cover no-repeat;
+  width: 100vw;
+  height: 120vh;
+  /* height: 60svh; */
+}
+
+.InterfacesSection {
+  background: url("../../assets/interfaceBg.svg");
+  width: 100svw;
+  height: 100%;
+}
+
+.InterfacedisplayBg {
+  background: url("../../assets/interfaceDisplaybg.png") center/contain
+    no-repeat;
+  height: 40rem;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.proofSection {
+  background: url("../../assets/solutionsBg.svg");
+  width: 100svw;
+  height: 800px;
+}
+
+.trackerSection {
+  background: url("../../assets/trackerBg.svg");
+  width: 100svw;
+  height: 100%;
+}
+
+.neww {
+  position: absolute;
+  right: 0%;
+  /* left: -45%; */
+  top: 10%;
+  bottom: 15%;
+
+  background: rgb(255, 145, 0);
+  filter: blur(200px);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+}

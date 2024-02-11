@@ -47,7 +47,7 @@ export const Faq = () => {
   });
 
   return (
-    <div className="py-20 px-28 bg-[#F1F6FF]">
+    <div className="py-20 lg:px-28 md:px-16 sm:px-8  px-4 bg-[#F1F6FF]">
       <div className="flex flex-col items-center justify-center mb-10">
         <img src={faqQuestionMark} alt="" />
         <h1 className="text-[#2E526B] font-bold text-[22px] mt-4">
@@ -56,7 +56,7 @@ export const Faq = () => {
         <div className="bg-[#7B32B5] w-12 h-[2px] mt-2"></div>
       </div>
 
-      <div className="bg-white p-20 rounded-lg flex flex-col ">
+      <div className="bg-white  lg:px-20 md:px-10 sm:px-8  px-4 py-10 rounded-lg flex flex-col ">
         {faqs.map(({ question, answer }, index) => {
           return (
             <div

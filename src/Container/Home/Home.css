@@ -12,17 +12,26 @@
 }
 
 .InterfacedisplayBg {
-  background: url("../../assets/interfaceDisplaybg.png") center/contain
-    no-repeat;
-  height: 40rem;
+  background: url("../../assets/interfaceDisplaybg.png") center no-repeat;
+  height: 300px;
   width: 100%;
   padding-top: 50px;
+}
+
+@media (min-width: 1300px) {
+  .InterfacedisplayBg {
+    background: url("../../assets/interfaceDisplaybg.png") center/contain
+      no-repeat;
+    height: 40rem;
+    width: 100%;
+    padding-top: 50px;
+  }
 }
 
 .proofSection {
   background: url("../../assets/solutionsBg.svg");
   width: 100svw;
-  height: 800px;
+  height: 100%;
 }
 
 .trackerSection {

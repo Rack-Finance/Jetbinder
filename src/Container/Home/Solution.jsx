@@ -6,15 +6,15 @@ import logistics from "../../assets/Logistics.svg";
 
 export const Solution = () => {
   return (
-    <div className=" px-28 pb-10">
+    <div className=" lg:px-28 md:px-16 sm:px-8  px-4 md:pb-10">
       <div className="flex flex-col items-center justify-center mb-10">
-        <h1 className="text-[#2E526B] font-bold text-[22px] mt-24">
+        <h1 className="text-[#2E526B] font-bold text-[22px] mt-6 sm:mt-16 md:mt-24">
           Solutions for every delivery
         </h1>
         <div className="bg-[#7B32B5] w-12 h-[2px] mt-2"></div>
       </div>
 
-      <div className="grid grid-cols-4 gap-4 ">
+      <div className="grid ss:grid-cols-2  sm:grid-cols-3 md:grid-cols-4 gap-4 ">
         <Cards
           img={deliveries}
           title={"Pick and Delivery"}

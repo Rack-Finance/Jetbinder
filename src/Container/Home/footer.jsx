@@ -7,9 +7,9 @@ import facebookIcon from "../../assets/Facebook.svg";
 export const Footer = () => {
   return (
     <>
-      <div className="bg-[#F1F6FF] w-full text-[#2E526B] px-28  ">
+      <div className="bg-[#F1F6FF] w-full text-[#2E526B] lg:px-28 md:px-16 sm:px-8  px-4  ">
         <div className="vlg:container vlg:mx-auto  pt-14 font-fontLight">
-          <div className="grid grid-cols-2 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-8 pb-20">
+          <div className="grid grid-cols-2 lg:grid-cols-6 ss:grid-cols-3 sm:grid-cols-4 gap-8 pb-10 sm:pb-20">
             <div>
               <div className="pr-[40px] cursor-pointer">
                 <a href="#">
@@ -31,21 +31,21 @@ export const Footer = () => {
                 <a
                   href=""
                   //   target="_blanck"
-                  className="text-sm font-fontLight pb-2 hover:text-[#D090FF] hover:font-fontSemi"
+                  className="sm:text-sm text-[12px] font-fontLight pb-2 hover:text-[#D090FF] hover:font-fontSemi"
                 >
                   Features
                 </a>
                 <a
                   href=""
                   //   target="_blanck"
-                  className="text-sm pb-2 font-fontLight hover:text-[#D090FF] hover:font-fontSemi"
+                  className="sm:text-sm text-[12px] pb-2 font-fontLight hover:text-[#D090FF] hover:font-fontSemi"
                 >
                   API
                 </a>
                 <a
                   href=""
                   //   target="_blanck"
-                  className="text-sm pb-2 font-fontLight hover:text-[#D090FF] hover:font-fontSemi"
+                  className="sm:text-sm text-[12px]  pb-2 font-fontLight hover:text-[#D090FF] hover:font-fontSemi"
                 >
                   Solutions
                 </a>
@@ -59,19 +59,19 @@ export const Footer = () => {
 
                 <a
                   href="#"
-                  className="text-sm font-fontLight pb-2 hover:text-[#D090FF] hover:font-fontSemi"
+                  className="sm:text-sm text-[12px]  font-fontLight pb-2 hover:text-[#D090FF] hover:font-fontSemi"
                 >
                   About us
                 </a>
                 <a
                   href="#"
-                  className="text-sm font-fontLight pb-2 hover:text-[#D090FF] hover:font-fontSemi"
+                  className="sm:text-sm text-[12px]  font-fontLight pb-2 hover:text-[#D090FF] hover:font-fontSemi"
                 >
                   Blogs
                 </a>
                 <a
                   href="#"
-                  className="text-sm font-fontLight pb-2 hover:text-[#D090FF] hover:font-fontSemi"
+                  className="sm:text-sm text-[12px]  font-fontLight pb-2 hover:text-[#D090FF] hover:font-fontSemi"
                 >
                   Contact us
                 </a>
@@ -82,13 +82,13 @@ export const Footer = () => {
                 <li className="text-base font-medium pb-3 font-fontSemi">
                   Support
                 </li>
-                <li className="text-sm font-fontLight pb-2 hover:cursor-pointer hover:text-[#D090FF]">
+                <li className="sm:text-sm text-[12px]  font-fontLight pb-2 hover:cursor-pointer hover:text-[#D090FF]">
                   Support center{" "}
                 </li>
-                <li className="text-sm font-fontLight pb-2 hover:cursor-pointer hover:text-[#D090FF]">
+                <li className="sm:text-sm text-[12px]  font-fontLight pb-2 hover:cursor-pointer hover:text-[#D090FF]">
                   System status
                 </li>
-                <li className="text-sm font-fontLight pb-2 hover:cursor-pointer hover:text-[#D090FF]">
+                <li className="sm:text-sm text-[12px]  font-fontLight pb-2 hover:cursor-pointer hover:text-[#D090FF]">
                   Languages
                 </li>
               </ul>
@@ -109,8 +109,12 @@ export const Footer = () => {
           </div>
 
           <div className="flex justify-between border-t-[0.5px] border-[#2E526B] pt-4 pb-7 text-sm font-fontLight">
-            <p>Copyrights &copy; 2024 Jetbinder </p>
-            <p>Terms & conditions | Privacy policy</p>
+            <p className="sm:text-sm text-[12px] ">
+              Copyrights &copy; 2024 Jetbinder{" "}
+            </p>
+            <p className="sm:text-sm text-[12px] ">
+              Terms & conditions | Privacy policy
+            </p>
           </div>
         </div>
       </div>

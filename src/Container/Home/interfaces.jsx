@@ -13,7 +13,7 @@ export const Interfaces = () => {
   const [myinterface, setMyInterface] = useState("Dashboard");
 
   return (
-    <div className="InterfacesSection px-28 pb-20 pt-28">
+    <div className="InterfacesSection lg:px-28 md:px-16 sm:px-8  px-4 pb-0 md:pb-20 pt-28">
       <div className="flex flex-col items-center justify-center mb-10 mt-20">
         <h1 className="text-[#2E526B] font-bold text-[22px] mt-24">
           Delivery Business Interfcaes{" "}
@@ -21,12 +21,12 @@ export const Interfaces = () => {
         <div className="bg-[#7B32B5] w-12 h-[2px] mt-2"></div>
       </div>
 
-      <div className="flex justify-center items-center gap-10">
+      <div className="flex justify-center items-center gap-3 sm:gap-6 md:gap-10">
         {interfaceTitles.map(({ title, id }) => {
           return (
             <p
               key={id}
-              className={`text-[#2E526B] border-[0.5px] border-[#2E526B] py-2 px-8 rounded-md cursor-pointer ${
+              className={`text-[#2E526B] text-[12px] border-[0.5px] border-[#2E526B] py-2 px-2 sm:px-8 rounded-md cursor-pointer ${
                 myinterface === title ? "bg-orange-400" : "bg-transparent"
               }`}
               onClick={() => {
@@ -39,7 +39,7 @@ export const Interfaces = () => {
         })}
       </div>
 
-      <div className="flex justify-center mt-24 InterfacedisplayBg">
+      <div className="flex justify-center mt-8 md:mt-24 InterfacedisplayBg">
         <MyInterfaceDisplay myinterface={myinterface} />
       </div>
     </div>

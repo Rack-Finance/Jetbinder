@@ -24,7 +24,7 @@ const myData = [
 export const Proof = () => {
   return (
     <div className="bg-[#F1F6FF] ">
-      <div className="proofSection flex flex-col justify-center pt-20">
+      <div className="proofSection flex flex-col justify-center pt-72 sm:pt-60 md:pt-20 pb-10 sm:pb-0 h-full sm:h-[700px]">
         {" "}
         <div className="flex flex-col items-center justify-center mb-10">
           <h1 className="text-[#fff] font-bold text-[22px] text-center">
@@ -32,7 +32,7 @@ export const Proof = () => {
           </h1>
           <div className="bg-[#fff] w-12 h-[2px] mt-3"></div>
         </div>
-        <div className="flex px-28 gap-6 items-center ">
+        <div className="grid ss:grid-cols-2  sm:grid-cols-3 lg:px-28 md:px-16 sm:px-8  px-4 gap-6 items-center ">
           {myData.map(({ img, title, text }, index) => {
             return (
               <div key={index} className="flex flex-col items-center">

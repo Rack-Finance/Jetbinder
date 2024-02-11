@@ -7,11 +7,11 @@ import "./Home.css";
 
 const Hero = () => {
   return (
-    <div className=" heroContainer flex justify-between px-28 py-10 relative ">
+    <div className=" heroContainer flex flex-col sm:flex-row sm:justify-between lg:px-28 md:px-16 sm:px-8  px-4 py-4 sm:py-10 relative ">
       <div className="neww "></div>
-      <div className="mt-40 z-10">
+      <div className="md:mt-40 mt-10 z-10">
         <div className="">
-          <h1 className="text-white text-center text-[38px] font-bold">
+          <h1 className="text-white text-center sm:text-[38px] text-[28px] font-bold">
             JetBinder Delivery
           </h1>
           <p className="text-[13px] text-[#D8D7F1] font-[200] text-center">
@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="z-10">
         <img src={Herobanner} alt="" />
       </div>
-      <div className="absolute bottom-[20px] w-[45rem] left-[15%] z-10">
+      <div className="absolute bottom-[40px] ss:bottom-[0px] sm:bottom-[20px] sm:w-[38rem] md:w-[45rem] left-[0%] sm:left-[20%] md:left-[28%] z-10">
         <img src={Logos} alt="" />
       </div>
     </div>

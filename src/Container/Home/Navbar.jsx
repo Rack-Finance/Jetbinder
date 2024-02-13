@@ -2,19 +2,72 @@ import React, { useState } from "react";
 import Logo from "../../assets/jetbinderLogo.svg";
 import { FaBars } from "react-icons/fa6";
 import { TiTimes } from "react-icons/ti";
+import { Link } from "react-router-dom";
+import { Link as AnchorLink } from "react-scroll";
+import { useLocation } from "react-router-dom";
 
 export const Navbar = () => {
   const [toggleMobile, setTogglemobile] = useState(false);
 
+  // <AnchorLink
+  //   spy={true}
+  //   smooth={true}
+  //   to="productSection"
+  //   onClick={closeMobileMenu}
+  // >
+  //   Products
+  // </AnchorLink>;
+
+  // id = "productSection";
+  const location = useLocation();
+
+  const navigateToHomePage = () => {
+    window.location.href = "/"; // Navigate to the homepage
+  };
+
+  const handleSolutionClick = () => {
+    if (window.location.pathname !== "/") {
+      navigateToHomePage(); // Navigate to the homepage first
+    }
+
+    window.onload = () => {
+      setTimeout(() => {
+        const solutionSection = document.getElementById("solutionSection");
+        if (solutionSection) {
+          solutionSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 5);
+    };
+  };
+
   return (
     <div className="bg-[#7B32B5] w-full sticky z-[100] top-0 lg:px-28 md:px-16 sm:px-8  px-4  sm:py-6  py-3 flex justify-between items-center">
-      <img src={Logo} alt="" className="w-[8rem] md:w-[10rem]" />
+      <Link to="/">
+        {" "}
+        <img src={Logo} alt="" className="w-[8rem] md:w-[10rem]" />
+      </Link>
 
       <ul className="sm:flex  gap-6 md:gap-14   font-light hidden  text-[#D8D7F1] text-[14px] ">
-        <li className="cursor-pointer">Solutions</li>
+        <AnchorLink
+          spy={true}
+          smooth={true}
+          to="solutionSection"
+          className="cursor-pointer"
+          onClick={() => {
+            setTogglemobile(false);
+            handleSolutionClick();
+          }}
+        >
+          Solutions
+        </AnchorLink>
         <li className="cursor-pointer">API's</li>
-        <li className="cursor-pointer">About</li>
-        <li className="cursor-pointer">Contact</li>
+        {/* <li className="cursor-pointer">About</li> */}
+        <Link to="/about_us" className="cursor-pointer">
+          About{" "}
+        </Link>
+        <Link to="/contact_us" className="cursor-pointer">
+          Contact
+        </Link>
       </ul>
 
       <div className="sm:flex hidden gap-6">
@@ -46,10 +99,23 @@ export const Navbar = () => {
           </div>
 
           <ul className="flex flex-col  gap-2  font-light   text-[#D8D7F1] text-[14px] my-8">
-            <li className="cursor-pointer">Solutions</li>
+            <AnchorLink
+              spy={true}
+              smooth={true}
+              to="solutionSection"
+              onClick={() => {
+                setTogglemobile(false);
+                handleSolutionClick();
+              }}
+              className="cursor-pointer"
+            >
+              Solutions
+            </AnchorLink>
             <li className="cursor-pointer">API's</li>
             <li className="cursor-pointer">About</li>
-            <li className="cursor-pointer">Contact</li>
+            <Link to="/contact_us" className="cursor-pointer">
+              Contact
+            </Link>
           </ul>
 
           <div className="flex flex-col gap-4">

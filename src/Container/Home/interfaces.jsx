@@ -6,7 +6,7 @@ import { AgentApp } from "./interfaces/agentApp";
 const interfaceTitles = [
   { title: "Dashboard", id: 1 },
   { title: "Customer App", id: 2 },
-  { title: "Agent App", id: 3 },
+  // { title: "Agent App", id: 3 },
 ];
 
 export const Interfaces = () => {
@@ -21,7 +21,7 @@ export const Interfaces = () => {
         <div className="bg-[#7B32B5] w-12 h-[2px] mt-2"></div>
       </div>
 
-      <div className="flex justify-center items-center gap-3 sm:gap-6 md:gap-10">
+      <div className="flex justify-center items-center gap-3 sm:gap-6 md:gap-4">
         {interfaceTitles.map(({ title, id }) => {
           return (
             <p
@@ -52,8 +52,8 @@ const MyInterfaceDisplay = (props) => {
       return <DashboardInterface />;
     case "Customer App":
       return <CustomerApp />;
-    case "Agent App":
-      return <AgentApp />;
+    // case "Agent App":
+    //   return <AgentApp />;
     default:
       return <DashboardInterface />;
   }

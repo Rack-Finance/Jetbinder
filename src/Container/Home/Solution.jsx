@@ -6,7 +6,10 @@ import logistics from "../../assets/Logistics.svg";
 
 export const Solution = () => {
   return (
-    <div className=" lg:px-28 md:px-16 sm:px-8  px-4 md:pb-10">
+    <div
+      className=" lg:px-28 md:px-16 sm:px-8  px-4 md:pb-10"
+      id="solutionSection"
+    >
       <div className="flex flex-col items-center justify-center mb-10">
         <h1 className="text-[#2E526B] font-bold text-[22px] mt-6 sm:mt-16 md:mt-24">
           Solutions for every delivery

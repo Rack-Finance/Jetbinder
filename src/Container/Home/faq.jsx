@@ -12,28 +12,28 @@ const faqs = [
   {
     id: 2,
 
-    question: "What is Jetbinder?",
+    question: "How are fares calculated?",
     answer:
       "Jetbinder is an innovative platform designed to ease business productivity. Created to facilitate and optimize deliveries, jetbinder is ideal for you to cut costs and delight your customers with fast, reliable, practical, transparent and efficient delivery services provided by Jetbinder.",
   },
   {
     id: 3,
 
-    question: "What is Jetbinder?",
+    question: "What are the payment options?",
     answer:
       "Jetbinder is an innovative platform designed to ease business productivity. Created to facilitate and optimize deliveries, jetbinder is ideal for you to cut costs and delight your customers with fast, reliable, practical, transparent and efficient delivery services provided by Jetbinder.",
   },
   {
     id: 4,
 
-    question: "What is Jetbinder?",
+    question: "Can i cancel my order?",
     answer:
       "Jetbinder is an innovative platform designed to ease business productivity. Created to facilitate and optimize deliveries, jetbinder is ideal for you to cut costs and delight your customers with fast, reliable, practical, transparent and efficient delivery services provided by Jetbinder.",
   },
   {
     id: 5,
 
-    question: "What is Jetbinder?",
+    question: "Are i charged for cancelling?",
     answer:
       "Jetbinder is an innovative platform designed to ease business productivity. Created to facilitate and optimize deliveries, jetbinder is ideal for you to cut costs and delight your customers with fast, reliable, practical, transparent and efficient delivery services provided by Jetbinder.",
   },

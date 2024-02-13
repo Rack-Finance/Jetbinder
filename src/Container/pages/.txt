@@ -1,0 +1,53 @@
+  {/* <div className="md:w-[40%] w-full sm:w-[60%] sm:mx-auto md:mx-0 mt-4 md:mt-0 border border-[#BDBDBD] p-8 flex flex-col gap-6 shadow-lg bg-white">
+          <div className="flex gap-4 w-full">
+            <input
+              name="firstname"
+              value={formvalue.firstname}
+              placeholder="First Name"
+              onChange={handleChange}
+              className="w-full focus:outline-none border border-[#BDBDBD] px-6 py-2 rounded-lg text-[14px]"
+            />
+            <input
+              name="lastname"
+              value={formvalue.lastname}
+              placeholder="Last Name"
+              onChange={handleChange}
+              className="w-full focus:outline-none border border-[#BDBDBD] px-6 py-2 rounded-lg text-[14px]"
+            />
+          </div>
+          <input
+            name="email"
+            value={formvalue.email}
+            placeholder="Email"
+            onChange={handleChange}
+            className="w-full focus:outline-none border border-[#BDBDBD] px-6 py-2 rounded-lg text-[14px]"
+          />
+          <input
+            name="phonenumber"
+            value={formvalue.phonenumber}
+            placeholder="Phone Number"
+            onChange={handleChange}
+            className="w-full focus:outline-none border border-[#BDBDBD] px-6 py-2 rounded-lg text-[14px]"
+          />
+          <textarea
+            name="message"
+            value={formvalue.message}
+            placeholder="Your message"
+            onChange={handleChange}
+            className="w-full focus:outline-none border border-[#BDBDBD] px-6 py-4 rounded-lg text-[14px]"
+          />
+          <div
+            className="bg-[#F48C08] text-[white] px-12 py-3 text-center rounded-lg cursor-pointer"
+            onClick={() => [
+              setFormValue({
+                firstname: "",
+                lastname: "",
+                email: "",
+                phonenumber: "",
+                message: "",
+              }),
+            ]}
+          >
+            Send Message
+          </div>
+        </div> */}

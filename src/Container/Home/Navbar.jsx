@@ -9,6 +9,9 @@ import { useLocation } from "react-router-dom";
 export const Navbar = () => {
   const [toggleMobile, setTogglemobile] = useState(false);
 
+  const pathname = window.location.pathname;
+  const splitLocation = pathname.split("/");
+
   // <AnchorLink
   //   spy={true}
   //   smooth={true}
@@ -19,7 +22,7 @@ export const Navbar = () => {
   // </AnchorLink>;
 
   // id = "productSection";
-  const location = useLocation();
+  // const location = useLocation();
 
   const navigateToHomePage = () => {
     window.location.href = "/"; // Navigate to the homepage
@@ -62,10 +65,24 @@ export const Navbar = () => {
         </AnchorLink>
         <li className="cursor-pointer">API's</li>
         {/* <li className="cursor-pointer">About</li> */}
-        <Link to="/about_us" className="cursor-pointer">
+        <Link
+          to="/about-us"
+          className={`cursor-pointer ${
+            splitLocation[1] === "about-us"
+              ? "text-[#F48C08]"
+              : "text-[#D8D7F1]"
+          }`}
+        >
           About{" "}
         </Link>
-        <Link to="/contact_us" className="cursor-pointer">
+        <Link
+          to="/contact-us"
+          className={`cursor-pointer ${
+            splitLocation[1] === "contact-us"
+              ? "text-[#F48C08]"
+              : "text-[#D8D7F1]"
+          }`}
+        >
           Contact
         </Link>
       </ul>
@@ -113,7 +130,7 @@ export const Navbar = () => {
             </AnchorLink>
             <li className="cursor-pointer">API's</li>
             <li className="cursor-pointer">About</li>
-            <Link to="/contact_us" className="cursor-pointer">
+            <Link to="/contact-us" className="cursor-pointer">
               Contact
             </Link>
           </ul>

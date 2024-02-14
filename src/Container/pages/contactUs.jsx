@@ -27,7 +27,7 @@ export const ContactUs = () => {
   return (
     <div className="w-full">
       <Navbar />
-      <img src={Banner} alt="" />
+      <img src={Banner} alt="" className="w-full" />
       <div className="lg:px-28 md:px-16 sm:px-8  px-4 py-10 w-full flex flex-col md:flex-row justify-between mt-12 md:mt-24 mb-24">
         <div className="md:w-[30%] w-full">
           <h1 className="text-[24px] font-[600]">Let's talk with us</h1>
@@ -107,7 +107,7 @@ export const ContactUs = () => {
 
       {/* Truck  */}
 
-      <img src={truck} alt="" className="" />
+      <img src={truck} alt="" className="w-full" />
 
       <Footer />
     </div>

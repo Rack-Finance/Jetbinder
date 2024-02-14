@@ -9,8 +9,8 @@ export default function App() {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/contact_us" element={<ContactUs />} />
-        <Route path="/about_us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
     </>
   );

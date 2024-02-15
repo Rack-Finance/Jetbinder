@@ -4,6 +4,7 @@ import playstore from "../../assets/googleplay.svg";
 import appstore from "../../assets/appstore.svg";
 import Logos from "../../assets/Logos.svg";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -18,11 +19,11 @@ const Hero = () => {
             Every parcel takes priority
           </p>
         </div>
-
-        <div className="w-[8rem] bg-[#F48C08] mx-auto mt-6 cursor-pointer text-[#FFF] text-center px-2 py-2 rounded-lg font-semibold text-[14px]">
-          Get Started
-        </div>
-
+        <Link to="/login">
+          <div className="w-[8rem] bg-[#F48C08] mx-auto mt-6 cursor-pointer text-[#FFF] text-center px-2 py-2 rounded-lg font-semibold text-[14px]">
+            Get started
+          </div>
+        </Link>
         <div className="flex gap-2 mt-6 justify-center">
           <img src={playstore} alt="" className="w-[8rem]" />
           <img src={appstore} alt="" className="w-[8rem]" />

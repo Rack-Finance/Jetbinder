@@ -1,5 +1,6 @@
 import React from "react";
 import deliveryman from "../../assets/Deliveryman.svg";
+import { Link } from "react-router-dom";
 
 export const Tracker = () => {
   return (
@@ -11,9 +12,11 @@ export const Tracker = () => {
           Tracker
         </h1>
 
-        <div className="w-[12rem] ss:w-[8rem] bg-[#F48C08] mt-6 cursor-pointer text-[#FFF] text-center px-2 py-2 rounded-lg font-semibold text-[14px]">
-          Get Started
-        </div>
+        <Link to="/login">
+          <div className="w-[12rem] ss:w-[8rem] bg-[#F48C08] mt-6 cursor-pointer text-[#FFF] text-center px-2 py-2 rounded-lg font-semibold text-[14px]">
+            Get Started
+          </div>
+        </Link>
       </div>
 
       <img src={deliveryman} alt="" className="w-[17rem]" />
